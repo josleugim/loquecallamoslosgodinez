@@ -1,0 +1,30 @@
+{
+  "name": "loquecallamoslosgodinez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@josleugim",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "cron": "^1.1.0",
+    "crypto": "0.0.3",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.4",
+    "jade": "^1.11.0",
+    "mongoose": "^4.3.1",
+    "multer": "^1.1.0",
+    "nib": "^1.1.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "request": "^2.67.0",
+    "stylus": "^0.53.0",
+    "twitter": "^1.2.5"
+  }
+}
