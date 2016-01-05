@@ -4,7 +4,7 @@
 var Post = require('mongoose').model('Post');
 var collectionRows = 0;
 
-exports.getFeeds = function (req, res) {
+exports.getPosts = function (req, res) {
     console.log('GET posts');
     var pageSize = 12;
     var start = 0;

@@ -1,0 +1,15 @@
+//
+   Created by @josleugim on 1/5/16.
+div(ng-controller="mvHomeCtrl")
+    table
+        tr
+            th Usuario
+            th Descripción
+            th Votos
+            th Imagen
+        tr(ng-repeat="post in posts")
+            td {{post.username}}
+            td {{post.caption}}
+            td {{post.rate}}
+            td
+                img(src="{{post.mediaUrl}}")

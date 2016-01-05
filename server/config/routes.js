@@ -9,7 +9,7 @@ var auth = require('./auth'),
 
 module.exports = function (app) {
     app.get('/api/users', auth.requiresRole('admin'), users.getUsers);
-    //app.get('/api/posts', posts.getPosts);
+    app.get('/api/posts', posts.getPosts);
     //app.post('/api/posts', auth.requiresRole('admin'), upload.single('mediaUrl'), posts.createPost);
     //app.delete('/api/posts', auth.requiresRole('admin'), posts.deletePost);
 

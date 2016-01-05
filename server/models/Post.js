@@ -14,7 +14,7 @@ var postSchema = mongoose.Schema({
     mediaUrl: {type: String},
     displayURl: {type: String},
     caption: {type: String},
-    rate: {type: Number},
+    rate: {type: Number, default: 0},
     isActive: {type: Boolean, default: true},
     createdAt: {type: Date, default: Date.now}
 });
