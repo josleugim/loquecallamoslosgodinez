@@ -4,12 +4,14 @@
 var auth = require('./auth'),
     users = require('../controllers/users'),
     posts = require('../controllers/posts'),
+    rate = require('../controllers/rate'),
     multer = require('multer'),
     upload = multer({dest: 'public/thumbnails/'});
 
 module.exports = function (app) {
     app.get('/api/users', auth.requiresRole('admin'), users.getUsers);
     app.get('/api/posts', posts.getPosts);
+    app.put('/api/posts/rate', rate.put);
     //app.post('/api/posts', auth.requiresRole('admin'), upload.single('mediaUrl'), posts.createPost);
     //app.delete('/api/posts', auth.requiresRole('admin'), posts.deletePost);
 
